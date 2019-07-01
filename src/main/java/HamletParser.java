@@ -33,7 +33,12 @@ public class HamletParser {
     }
 
     public String getHamletData(){
+
         return hamletData;
+    }
+
+    String replace(String from, String to){
+        return hamletData.replaceAll("(?i)"+from,to);
     }
 
 }
